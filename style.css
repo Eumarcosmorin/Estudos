@@ -1,90 +1,61 @@
 @charset "UTF-8";
 
+:root{
+
+    --fonte-principal:Arial, Helvetica, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.caixa{
-    background-color: brown;
-    height: 100vh;
-    width: 100vw;
+.inicio{
     padding: 10px;
 
-    display: flex;
 
-    /*CONTEINER*/
-
-    /*display: flex; linha*/
-    /*flex-direction: row-reverse*/
-
-    /*flex-direction: column;*/
-    /*flex-direction: column-reverse*/
-
-    /*flex-wrap: wrap; Qubra a linha para caber tudo*/
-    /*flex-wrap: wrap-reverse; a mesma coisa porem ao contrario*/
-    /*flex-wrap: nowrap; padrão, diminui pra caber da div*/
-
-    /*flex-flow: column wrap; junta os dosi*/
-
-    /*justify-content:center ; todos no centro*/
-    /*justify-content: flex-start; Alinha ao começo*/
-    /*justify-content: flex-end; Alinha ao final*/
-
-    /*EIXO PRINCIPAL*/
-
-    /*justify-content: space-between; Gera um espaço entre eles*/
-    /*justify-content: space-around; Cria uma margin entre os itens porem não igual*/
-    /*justify-content: space-evenly; Cria um espaço igual ao outro*/
-
-    /*EIXO SECUNDARIO*/
-
-    /*align-items: center ; centraliza*/
-    /*align-items: flex-end ; coloca ao final*/
-    /*align-items: flex-start ;coloca no começo*/
-
-    /*
-
-    AGURPA TUDO E DEIXA UM ESPAÇO MININO
-
-    align-content: flex-start;
-    align-content: flex-end;
-    align-content: center;*/
-
-}
-
-.item{
-    background-color: aliceblue;
-    margin: 10px;
-    color: coral;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-
-    /*ITEM*/
-}
-.item2{
-    /*DEFINE O TAMANHO DO ITEM FILHO*/
-    /*ele só aumenta ou diminui se ele passar da menidida definida pelo flex-basis*/
-
-    flex-basis: 20px;
-
-    flex-grow: 2 ;/* SE A TELA CRESCER ELE VAI CRESCER *% A MAIS*/
-
-    flex-shrink: 2 ;/* SE A TELA DIMINUIR ELE VAI DIMINUINDO *%  MAIS*/
-
-    /*flex: 20px 2 2 ;*/
-
+    background-image: url(img/homem-de-blusa-preta-com-opacidade.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
-    
+    height: 100vh;
+    width: 100vw;
+
+    text-align: center;
 }
 
-/*ORDER [muda a ordem de cada item dentro da div]
+.inicio>p{
+    
+    font-family: var(--fonte-principal);
+    margin: 45px;
+}
 
-    order: 2;
+.inicio>h1{
+    
+    margin-bottom: 60px;
+    font-family: var(--fonte-principal);
+    font-weight: 100;
 
-*/
+}
 
-/*align-self: ; COLOCA DENTRO DA DIV PRA MUDAR ELA DE LUGAR*/
+.modelos>img{
+
+
+    width: 240px;
+}
+
+.inicio>a{
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+    background-color: black;
+    margin: auto;
+    width: 220px;
+    font-size: larger;
+    margin-top: 50px;
+    display: block;
+}
 
