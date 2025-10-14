@@ -3,15 +3,19 @@
 :root{
 
     --fonte-principal:Arial, Helvetica, sans-serif;
+
 }
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .inicio{
+
     padding: 10px;
 
 
@@ -19,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
     
     height: 100vh;
     width: 100vw;
@@ -30,6 +35,7 @@
     
     font-family: var(--fonte-principal);
     margin: 45px;
+
 }
 
 .inicio>h1{
@@ -40,13 +46,31 @@
 
 }
 
-.modelos>img{
+.modelos{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.modelos>button{
+
+    height: 20px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px ;
+    cursor: pointer;
+    
+}
+
+.modelos>img{
 
     width: 240px;
 }
 
 .inicio>a{
+
     font-family: var(--fonte-principal);
     text-decoration: none;
     padding: 10px;
@@ -57,5 +81,6 @@
     font-size: larger;
     margin-top: 50px;
     display: block;
+
 }
 
